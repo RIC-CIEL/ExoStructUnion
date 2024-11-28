@@ -19,12 +19,12 @@ struct SRouleau {
 struct SCasier {
 	int px;
 	int py;
-	contenu cont;
+	UContenu cont;
 	EEtat etat;
 };
 
 
-union contenu {
+union UContenu {
 	Spalette pal;
 	SRouleau roul;
 };
@@ -34,4 +34,5 @@ union contenu {
 int main()
 {
 	cout << "Bienvenue dans le Transgerbeur";
+	SCasier tabCasier[9];
 }
